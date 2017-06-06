@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Fyxio</string>
-    <string name="action_settings">Settings</string>
+
+    <string name="btn_next_exc">Volgende oefening</string>
+
+    <string name="action_settings">Instellingen</string>
+
+
+    <string name="error_player">%Oeps! er is iets fout gegaan. Controleer uw internetverbinding%</string>
+
+
 </resources>
