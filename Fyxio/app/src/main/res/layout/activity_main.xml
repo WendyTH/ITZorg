@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ipmedt4.example.com.fyxio.MainActivity">
+    tools:context="ipmedt4.example.com.fyxio.MainActivity"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -18,16 +27,39 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
+
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <fragment
+            android:id="@+id/youtube_player_fragment"
+            android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            tools:layout="@layout/activity_main" />
+
+
+        <Button
+            android:id="@+id/btn_next_ex"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rouned_corner_shadow"
+            android:text="@string/btn_next_exc" />
+
+    </LinearLayout>
+
 
 </android.support.design.widget.CoordinatorLayout>
+
+    </RelativeLayout>

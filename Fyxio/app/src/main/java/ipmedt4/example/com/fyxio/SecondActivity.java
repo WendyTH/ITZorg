@@ -2,22 +2,22 @@ package ipmedt4.example.com.fyxio;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerFragment;
-import com.google.android.youtube.player.YouTubePlayerView;
 
-public class MainActivity extends AppCompatActivity implements YouTubePlayer.OnInitializedListener{
+/**
+ * Created by thier on 7-6-2017.
+ */
+
+public class SecondActivity extends AppCompatActivity implements YouTubePlayer.OnInitializedListener{
 
     private YouTubePlayerFragment playerFragment;
     private YouTubePlayer mPlayer;
@@ -27,9 +27,8 @@ public class MainActivity extends AppCompatActivity implements YouTubePlayer.OnI
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        setContentView(R.layout.activity_second);
+
 
         playerFragment =
                 (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youtube_player_fragment);
@@ -37,16 +36,19 @@ public class MainActivity extends AppCompatActivity implements YouTubePlayer.OnI
         playerFragment.initialize(Config.DEVELOPER_KEY, this);
 
 
+
+
+
         // Locate the button in activity_main.xml
-        button = (Button) findViewById(R.id.btn_next_ex);
+        button = (Button) findViewById(R.id.btn_next_ex1);
 
         // Capture button clicks
         button.setOnClickListener(new android.view.View.OnClickListener() {
             public void onClick(View arg0) {
 
                 // Start SecondActivity.class
-                Intent myIntent = new Intent(MainActivity.this,
-                        SecondActivity.class);
+                Intent myIntent = new Intent(SecondActivity.this,
+                        ThirdActivity.class);
                 startActivity(myIntent);
             }
         });
@@ -70,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements YouTubePlayer.OnI
 
         if (!wasRestored) {
             //player.cueVideo("9rLZYyMbJic");
-            mPlayer.cueVideo(Config.YOUTUBE_VIDEO1_CODE);
+            mPlayer.cueVideo(Config.YOUTUBE_VIDEO2_CODE);
         }
         else
         {
@@ -85,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements YouTubePlayer.OnI
     }
 
 
-    @Override
+   @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
