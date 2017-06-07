@@ -3,7 +3,11 @@
 
     <string name="btn_next_exc">Volgende oefening</string>
 
+    <string name="btn_start_exc">Start oefeningen</string>
+
     <string name="action_settings">Instellingen</string>
+
+    <string name="ondertitel">Werk aan uw herstel met de Fyxio app!</string>
 
 
     <string name="error_player">%Oeps! er is iets fout gegaan. Controleer uw internetverbinding%</string>
