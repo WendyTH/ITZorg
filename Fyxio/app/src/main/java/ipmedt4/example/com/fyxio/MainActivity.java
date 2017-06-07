@@ -17,10 +17,9 @@ import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerFragment;
 import com.google.android.youtube.player.YouTubePlayerView;
 
-public class MainActivity extends AppCompatActivity implements YouTubePlayer.OnInitializedListener{
+public class MainActivity extends AppCompatActivity {
 
-    private YouTubePlayerFragment playerFragment;
-    private YouTubePlayer mPlayer;
+
 
     Button button;
 
@@ -31,14 +30,11 @@ public class MainActivity extends AppCompatActivity implements YouTubePlayer.OnI
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        playerFragment =
-                (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youtube_player_fragment);
 
-        playerFragment.initialize(Config.DEVELOPER_KEY, this);
 
 
         // Locate the button in activity_main.xml
-        button = (Button) findViewById(R.id.btn_next_ex);
+        button = (Button) findViewById(R.id.btn_start_ex);
 
         // Capture button clicks
         button.setOnClickListener(new android.view.View.OnClickListener() {
@@ -46,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements YouTubePlayer.OnI
 
                 // Start SecondActivity.class
                 Intent myIntent = new Intent(MainActivity.this,
-                        SecondActivity.class);
+                        FirstActivity.class);
                 startActivity(myIntent);
             }
         });
@@ -54,35 +50,6 @@ public class MainActivity extends AppCompatActivity implements YouTubePlayer.OnI
 
 
 
-    @Override
-    public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player,
-                                        boolean wasRestored) {
-        mPlayer = player;
-
-        //Enables automatic control of orientation
-        mPlayer.setFullscreenControlFlags(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_ORIENTATION);
-
-        //Show full screen in landscape mode always
-        mPlayer.addFullscreenControlFlag(YouTubePlayer.FULLSCREEN_FLAG_ALWAYS_FULLSCREEN_IN_LANDSCAPE);
-
-        //System controls will appear automatically
-        mPlayer.addFullscreenControlFlag(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_SYSTEM_UI);
-
-        if (!wasRestored) {
-            //player.cueVideo("9rLZYyMbJic");
-            mPlayer.cueVideo(Config.YOUTUBE_VIDEO1_CODE);
-        }
-        else
-        {
-            mPlayer.play();
-        }
-    }
-
-    @Override
-    public void onInitializationFailure(YouTubePlayer.Provider provider,
-                                        YouTubeInitializationResult errorReason) {
-        mPlayer = null;
-    }
 
 
     @Override

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
+    android:background="@color/colorBackground">
 
 
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -40,24 +40,35 @@
         android:background="@color/colorPrimary"
         android:orientation="vertical">
 
-        <fragment
-            android:id="@+id/youtube_player_fragment"
-            android:name="com.google.android.youtube.player.YouTubePlayerFragment"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            tools:layout="@layout/activity_main" />
-
-
-        <Button
-            android:id="@+id/btn_next_ex"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/rouned_corner_shadow"
-            android:text="@string/btn_next_exc" />
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewTitel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/textViewOndertitel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:gravity="center"
+        android:text="@string/ondertitel"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_start_ex"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rouned_corner_shadow"
+        android:text="@string/btn_start_exc" />
 
 
 </android.support.design.widget.CoordinatorLayout>
