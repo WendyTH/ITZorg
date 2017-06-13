@@ -19,9 +19,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -29,6 +31,8 @@ import android.widget.Toast;
 
 import java.util.Calendar;
 import java.util.Random;
+
+import static android.widget.Toast.LENGTH_SHORT;
 
 public class Settings extends AppCompatActivity {
 
@@ -100,15 +104,10 @@ public class Settings extends AppCompatActivity {
                 setAlarmText("Uw dagelijkse reminder is ingesteld op " + hour + ":" + minute);
                 Toast toast = new Toast(getApplicationContext());
                 toast.setGravity(Gravity.CENTER,0,0);
-                TextView tv = new TextView(Settings.this);
-                tv.setBackgroundColor(Color.rgb(76, 175, 80));
-                tv.setTextColor(Color.WHITE);
-                tv.setTextSize(20);
-                Typeface t = Typeface.create("serif", Typeface.NORMAL);
-                tv.setTypeface(t);
-                tv.setPadding(20,20,20,20);
-                tv.setText("U heb de reminder ingesteld!");
-                toast.setView(tv);
+                toast.setDuration(LENGTH_SHORT);
+                LayoutInflater lin = getLayoutInflater();
+                View appear = lin.inflate(R.layout.toast_layout,(ViewGroup) findViewById(R.id.toast_layout));
+                toast.setView(appear);
                 toast.show();
 
 
