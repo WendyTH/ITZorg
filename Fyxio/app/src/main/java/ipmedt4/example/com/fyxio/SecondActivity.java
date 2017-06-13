@@ -103,7 +103,8 @@ public class SecondActivity extends AppCompatActivity implements YouTubePlayer.O
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent i = new Intent(SecondActivity.this, Settings.class);
+            startActivity(i);
         }
 
         return super.onOptionsItemSelected(item);

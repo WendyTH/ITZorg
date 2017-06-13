@@ -103,7 +103,8 @@ public class FirstActivity extends AppCompatActivity implements YouTubePlayer.On
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            Intent i = new Intent(FirstActivity.this, Settings.class);
+            startActivity(i);
         }
 
         return super.onOptionsItemSelected(item);

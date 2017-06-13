@@ -13,6 +13,7 @@
         android:fitsSystemWindows="true"
         android:theme="@style/AppTheme.AppBarOverlay" >
 
+
         <!--collapsing toolbar met image -->
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/toolbar_layout"
