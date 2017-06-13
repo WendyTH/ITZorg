@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
@@ -24,6 +25,8 @@ public class FirstActivity extends AppCompatActivity implements YouTubePlayer.On
 
     Button button;
 
+    ImageButton imageButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +37,9 @@ public class FirstActivity extends AppCompatActivity implements YouTubePlayer.On
                 (YouTubePlayerFragment) getFragmentManager().findFragmentById(R.id.youtube_player_fragment);
 
         playerFragment.initialize(Config.DEVELOPER_KEY, this);
+
+        //button listener aanroepen
+        addListenerOnButton();
 
 
 
@@ -51,6 +57,22 @@ public class FirstActivity extends AppCompatActivity implements YouTubePlayer.On
                         SecondActivity.class);
                 startActivity(myIntent);
             }
+        });
+    }
+
+    //Listener voor imagebutton
+    public void addListenerOnButton(){
+        imageButton = (ImageButton) findViewById(R.id.next_btn);
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
+
+        @Override
+            public void onClick(View arg0) {
+                Intent myIntent = new Intent(FirstActivity.this,
+                        SecondActivity.class);
+                startActivity(myIntent);
+        }
+
         });
     }
 

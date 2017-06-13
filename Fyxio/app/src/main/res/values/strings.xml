@@ -9,10 +9,16 @@
 
     <string name="ondertitel">Werk aan uw herstel met de Fyxio app!
     Binnen deze app kunt u meerdere oefeningen vinden in de vorm van video\'s.
-    We wensen u veel succes met uw revalidatie!</string>
+        In de video\'s wordt uitgelegd hoe u de oefeningen behoort uit te voeren en kunt u
+        tegelijkertijd meedoen.
+    \n \n Wij wensen u veel succes met uw revalidatie!</string>
 
 
     <string name="error_player">%Oeps! er is iets fout gegaan. Controleer uw internetverbinding%</string>
 
+    <string name="next_txt">Next</string>
+    <string name="info_video1">Been oefening</string>
+    <string name="info_video2">Enkel oefening</string>
+    <string name="info_video3">Klaar!</string>
 
 </resources>

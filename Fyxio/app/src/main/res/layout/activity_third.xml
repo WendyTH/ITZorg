@@ -24,4 +24,54 @@
         android:background="@drawable/rouned_corner_shadow"
         android:text="@string/btn_next_exc"
         android:layout_below="@id/youtube_player_fragment"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+
+        <ImageButton
+            android:id="@+id/next_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="180dp"
+            android:paddingBottom="50dp"
+            android:paddingTop="50dp"
+            android:src="@mipmap/ic_arrow_forward_white"
+            android:background="@android:color/transparent"/>
+
+        <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_txt"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="16dp"
+            android:alpha="0.8"
+            android:layout_alignEnd="@+id/next_btn3" /> -->
+
+
+        <TextView
+            android:id="@+id/vid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_video3"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_alignLeft="@id/next_btn3"
+            android:layout_marginLeft="115dp"/>
+
+    </RelativeLayout>
 </RelativeLayout>
