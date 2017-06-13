@@ -7,7 +7,9 @@
 
     <string name="action_settings">Instellingen</string>
 
-    <string name="ondertitel">Werk aan uw herstel met de Fyxio app!</string>
+    <string name="ondertitel">Werk aan uw herstel met de Fyxio app!
+    Binnen deze app kunt u meerdere oefeningen vinden in de vorm van video\'s.
+    We wensen u veel succes met uw revalidatie!</string>
 
 
     <string name="error_player">%Oeps! er is iets fout gegaan. Controleer uw internetverbinding%</string>
