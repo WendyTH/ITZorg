@@ -48,7 +48,7 @@ public class FirstActivity extends AppCompatActivity implements YouTubePlayer.On
 
                 // Start SecondActivity.class
                 Intent myIntent = new Intent(FirstActivity.this,
-                        ThirdActivity.class);
+                        SecondActivity.class);
                 startActivity(myIntent);
             }
         });
