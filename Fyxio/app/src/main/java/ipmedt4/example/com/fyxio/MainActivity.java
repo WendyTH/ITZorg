@@ -1,6 +1,7 @@
 package ipmedt4.example.com.fyxio;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -19,19 +20,19 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
     Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
-
+        getWindow().getDecorView().setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
 
         // Locate the button in activity_main.xml
         button = (Button) findViewById(R.id.btn_start_ex);
@@ -47,10 +48,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
