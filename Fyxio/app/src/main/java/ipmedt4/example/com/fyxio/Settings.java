@@ -1,5 +1,7 @@
 package ipmedt4.example.com.fyxio;
 
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 
 /**
@@ -16,6 +18,7 @@ import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -95,7 +98,22 @@ public class Settings extends AppCompatActivity {
 
 
                 setAlarmText("Uw dagelijkse reminder is ingesteld op " + hour + ":" + minute);
-                Toast.makeText(getApplicationContext(), "U hebt de reminder ingesteld", Toast.LENGTH_SHORT).show();
+                Toast toast = new Toast(getApplicationContext());
+                toast.setGravity(Gravity.CENTER,0,0);
+                TextView tv = new TextView(Settings.this);
+                tv.setBackgroundColor(Color.rgb(76, 175, 80));
+                tv.setTextColor(Color.WHITE);
+                tv.setTextSize(20);
+                Typeface t = Typeface.create("serif", Typeface.NORMAL);
+                tv.setTypeface(t);
+                tv.setPadding(20,20,20,20);
+                tv.setText("U heb de reminder ingesteld!");
+                toast.setView(tv);
+                toast.show();
+
+
+
+
             }
 
         });
