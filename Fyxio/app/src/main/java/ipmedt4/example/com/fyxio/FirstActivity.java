@@ -23,8 +23,6 @@ public class FirstActivity extends AppCompatActivity implements YouTubePlayer.On
     private YouTubePlayerFragment playerFragment;
     private YouTubePlayer mPlayer;
 
-    Button button;
-
     ImageButton imageButton;
 
     @Override

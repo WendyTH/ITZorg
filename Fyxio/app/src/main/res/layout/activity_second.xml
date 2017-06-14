@@ -1,20 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+    android:id="@+id/RelativeLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground">
+    android:background="@color/colorBackground"
+    android:orientation="vertical" >
 
-    <fragment
-        android:id="@+id/youtube_player_fragment"
-        android:name="com.google.android.youtube.player.YouTubePlayerFragment"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="56dp" />
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:background="@color/colorBackground"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+            <fragment
+                android:id="@+id/youtube_player_fragment"
+                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/info_ex2"
+                android:layout_below="@id/youtube_player_fragment"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
 
     <RelativeLayout
+        android:id="@+id/footer"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
@@ -60,6 +85,5 @@
             android:layout_marginTop="40dp"
             android:src="@mipmap/ic_arrow_forward_white"
             android:background="@android:color/transparent"/>
-
     </RelativeLayout>
 </RelativeLayout>
