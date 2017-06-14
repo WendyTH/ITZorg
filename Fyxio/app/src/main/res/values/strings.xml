@@ -1,5 +1,50 @@
 <resources>
-    <string name="app_name">IMTPMD</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_noord">NoordActivity</string>
+    <string name="app_name">Fyxio</string>
+
+    <string name="btn_next_exc">Volgende oefening</string>
+
+    <string name="btn_start_exc">Start oefeningen</string>
+
+    <string name="action_settings">Reminder instellen</string>
+
+    <string name="ondertitel">Werk aan uw herstel met de Fyxio app!
+    Binnen deze app kunt u meerdere oefeningen vinden in de vorm van video\'s.
+        In de video\'s wordt uitgelegd hoe u de oefeningen behoort uit te voeren en kunt u
+        tegelijkertijd meedoen.
+    \n \n Wij wensen u veel succes met uw revalidatie!</string>
+
+
+    <string name="error_player">%Oeps! er is iets fout gegaan. Controleer uw internetverbinding%</string>
+
+    <string name="next_txt">Next</string>
+    <string name="info_video1">Been oefening</string>
+    <string name="info_video2">Enkel oefening</string>
+    <string name="info_video3">Klaar!</string>
+
+    <string name="info_ex1">Binnen deze oefening gaan we de enkel op en neer bewegen.
+    U kunt hiervoor het beste zitten op bed of op een bank, waardoor uw benen plat liggen. \n \n
+    Voer de volgende stappen uit: \n
+    1. Beweeg uw tenen en uw enkel naar u toe. \n
+    2. Beweeg uw tenen en uw enkel van u af. \n
+    3. Herhaal deze beweging 10 keer. \n \n
+    U bent nu klaar met deze oefening en u kunt doorgaan naar de volgende pagina!</string>
+
+    <string name="info_ex2">Binnen deze oefening gaan we het been strekken naar achteren.
+    U kunt hiervoor het beste steunen op een stevige stoel, tafel of hoge bedrand voor extra balans. \n \n
+    Voer de volgende stappen uit: \n
+    1. Ga goed op twee benen staan en houd u vast aan de stoel. \n
+    2. Beweeg één been gestrekt naar achteren en blijf goed op het andere been staan.
+        Zorg ervoor dat u met uw tenen de grond raakt, niet met de gehele voet. \n
+    3. Herhaal deze beweging met elk been 10 keer. \n \n
+    U bent nu klaar met deze oefening en u kunt doorgaan naar de volgende pagina!</string>
+
+    <string name="info_ex3">Binnen deze oefening gaan we de enkel opnieuw op en neer bewegen.
+    U kunt hiervoor het beste op een stoel gaan zitten met uw voeten rustend op de grond. \n \n
+    Voer de volgende stappen uit: \n
+    1. Beweeg uw tenen en uw enkel naar u toe, waardoor uw tenen de lucht in wijzen. \n
+    2. Beweeg uw tenen en uw enkel van u af, waardoor uw tenen op de grond blijven en
+        uw enkel van de grond af komt. \n
+    3. Herhaal deze beweging 10 keer. \n \n
+    U bent nu klaar met de oefeningen voor vandaag, goed gedaan!</string>
+
 </resources>

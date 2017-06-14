@@ -83,7 +83,7 @@ public class Settings extends AppCompatActivity {
                 //setAlarmText("You clicked a button");
 
                 final int hour = alarmTimePicker.getCurrentHour();
-                final int minute = alarmTimePicker.getCurrentMinute();
+                final int minute = alarmTimePicker.getCurrentMinute();;
 
                 Log.e("MyActivity", "In the receiver with " + hour + " and " + minute);
                 setAlarmText("You clicked a " + hour + " and " + minute);
@@ -100,10 +100,8 @@ public class Settings extends AppCompatActivity {
 
                 // now you should change the set Alarm text so it says something nice
 
-            if (minute <=9 ){
-                setAlarmText("Uw dagelijkse reminder is ingesteld op " + hour + ":" + "0" + minute);}
-            else
-                {setAlarmText("Uw dagelijkse reminder is ingesteld op " + hour + ":" + minute);}
+
+                setAlarmText("Uw dagelijkse reminder is ingesteld op " + hour + ":" + minute);
                 Toast toast = new Toast(getApplicationContext());
                 toast.setGravity(Gravity.CENTER,0,0);
                 toast.setDuration(LENGTH_SHORT);
