@@ -1,24 +1,5 @@
 <resources>
-    <string name="app_name">Fyxio</string>
-
-    <string name="btn_next_exc">Volgende oefening</string>
-
-    <string name="btn_start_exc">Start oefeningen</string>
-
-    <string name="action_settings">Reminder instellen</string>
-
-    <string name="ondertitel">Werk aan uw herstel met de Fyxio app!
-    Binnen deze app kunt u meerdere oefeningen vinden in de vorm van video\'s.
-        In de video\'s wordt uitgelegd hoe u de oefeningen behoort uit te voeren en kunt u
-        tegelijkertijd meedoen.
-    \n \n Wij wensen u veel succes met uw revalidatie!</string>
-
-
-    <string name="error_player">%Oeps! er is iets fout gegaan. Controleer uw internetverbinding%</string>
-
-    <string name="next_txt">Next</string>
-    <string name="info_video1">Been oefening</string>
-    <string name="info_video2">Enkel oefening</string>
-    <string name="info_video3">Klaar!</string>
-
+    <string name="app_name">IMTPMD</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_noord">NoordActivity</string>
 </resources>
