@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="ipmedt4.example.com.fyxio.MainActivity">
+    tools:context="com.example.dipak.imtpmd.MainActivity">
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
