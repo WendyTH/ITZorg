@@ -1,8 +1,17 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_first_scrolling">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
 
     <fragment
         android:id="@+id/youtube_player_fragment"
@@ -14,6 +23,7 @@
         android:layout_marginTop="56dp" />
 
     <TextView
+        android:id="@+id/texting"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/info_ex1"
@@ -22,7 +32,62 @@
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"/>
 
-    <RelativeLayout
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next_txt"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="48dp"
+                android:layout_marginTop="32dp"
+                android:alpha="0.8"
+                android:layout_alignParentEnd="true" />
+
+
+            <TextView
+                android:id="@+id/vid_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_video1"
+                android:textSize="24sp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="55dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="48dp"/>
+
+            <ImageButton
+                android:id="@+id/next_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:paddingLeft="200dp"
+                android:paddingBottom="50dp"
+                android:paddingTop="50dp"
+                android:layout_marginTop="40dp"
+                android:src="@mipmap/ic_arrow_forward_white"
+                android:background="@android:color/transparent"/>
+
+
+
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+<!--    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignParentBottom="true"
@@ -71,5 +136,4 @@
 
 
 
-    </RelativeLayout>
-</RelativeLayout>
+    </RelativeLayout> -->
