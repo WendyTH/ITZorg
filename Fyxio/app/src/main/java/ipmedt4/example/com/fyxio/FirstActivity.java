@@ -40,24 +40,6 @@ public class FirstActivity extends AppCompatActivity implements YouTubePlayer.On
 
         //button listener aanroepen
         addListenerOnButton();
-
-
-
-
-
-        // Locate the button in activity_main.xml
-        button = (Button) findViewById(R.id.btn_next_ex);
-
-        // Capture button clicks
-        button.setOnClickListener(new android.view.View.OnClickListener() {
-            public void onClick(View arg0) {
-
-                // Start SecondActivity.class
-                Intent myIntent = new Intent(FirstActivity.this,
-                        SecondActivity.class);
-                startActivity(myIntent);
-            }
-        });
     }
 
     //Listener voor imagebutton
@@ -75,8 +57,6 @@ public class FirstActivity extends AppCompatActivity implements YouTubePlayer.On
 
         });
     }
-
-
 
     @Override
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer player,

@@ -39,20 +39,6 @@ public class ThirdActivity extends AppCompatActivity implements YouTubePlayer.On
 
         //button listener aanroepen
         addListenerOnButton();
-
-        // Locate the button in activity_main.xml
-        button = (Button) findViewById(R.id.btn_next_ex2);
-
-        // Capture button clicks
-        button.setOnClickListener(new android.view.View.OnClickListener() {
-            public void onClick(View arg0) {
-
-                // Start SecondActivity.class
-                Intent myIntent = new Intent(ThirdActivity.this,
-                        MainActivity.class);
-                startActivity(myIntent);
-            }
-        });
     }
 
     //imagebutton onclick listener
