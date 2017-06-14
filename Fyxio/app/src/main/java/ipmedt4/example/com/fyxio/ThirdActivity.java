@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
@@ -23,6 +24,7 @@ public class ThirdActivity extends AppCompatActivity implements YouTubePlayer.On
     private YouTubePlayer mPlayer;
 
     Button button;
+    ImageButton imageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,25 +37,25 @@ public class ThirdActivity extends AppCompatActivity implements YouTubePlayer.On
 
         playerFragment.initialize(Config.DEVELOPER_KEY, this);
 
-
-
-
-
-        // Locate the button in activity_main.xml
-        button = (Button) findViewById(R.id.btn_next_ex2);
-
-        // Capture button clicks
-        button.setOnClickListener(new android.view.View.OnClickListener() {
-            public void onClick(View arg0) {
-
-                // Start SecondActivity.class
-                Intent myIntent = new Intent(ThirdActivity.this,
-                        ThirdActivity.class);
-                startActivity(myIntent);
-            }
-        });
+        //button listener aanroepen
+        addListenerOnButton();
     }
 
+    //imagebutton onclick listener
+    public void addListenerOnButton(){
+        imageButton = (ImageButton) findViewById(R.id.next_btn3);
+
+        imageButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+                Intent myIntent = new Intent(ThirdActivity.this,
+                        MainActivity.class);
+                startActivity(myIntent);
+            }
+
+        });
+    }
 
 
     @Override
