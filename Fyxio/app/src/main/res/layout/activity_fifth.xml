@@ -70,7 +70,7 @@
             android:layout_marginLeft="40dp"
             android:layout_marginRight="48dp"
             android:layout_marginTop="55dp"
-            android:text="@string/info_rug"
+            android:text="@string/btn_back_overzicht"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -96,6 +96,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/pb2" />
+        app:srcCompat="@drawable/pb5" />
 
 </RelativeLayout>

@@ -72,8 +72,8 @@ public class FourthActivity  extends AppCompatActivity implements YouTubePlayer.
         mPlayer.addFullscreenControlFlag(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_SYSTEM_UI);
 
         if (!wasRestored) {
-            //player.cueVideo("9rLZYyMbJic");
-            mPlayer.cueVideo(Config.YOUTUBE_VIDEO4_CODE);
+
+            mPlayer.cueVideo(Config.YOUTUBE_VIDEO2_CODE);
         }
         else
         {

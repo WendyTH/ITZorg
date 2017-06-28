@@ -29,7 +29,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/info_ex2"
+                android:text="@string/Stab_buik"
                 android:layout_below="@id/youtube_player_fragment"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
@@ -46,10 +46,10 @@
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimary">
 
-        <TextView
+       <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/next_txt"
+            android:text="@string/back_txt"
             android:textSize="20sp"
             android:textColor="@android:color/white"
             android:textStyle="bold"
@@ -64,17 +64,17 @@
             android:id="@+id/vid_text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/info_video2"
-            android:textSize="24sp"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="55dp"
             android:layout_marginLeft="40dp"
-            android:layout_marginRight="48dp"/>
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="55dp"
+            android:text="@string/btn_back_overzicht"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/next_btn2"
+            android:id="@+id/next_btn4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
@@ -86,13 +86,10 @@
             android:layout_marginTop="40dp"
             android:src="@mipmap/ic_arrow_forward_white"
             android:background="@android:color/transparent"/>
+
+
     </RelativeLayout>
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/pb2" />
+
+
 </RelativeLayout>
