@@ -1,6 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical" >
 
-</LinearLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:background="@color/colorBackground"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <fragment
+                android:id="@+id/youtube_player_fragment"
+                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Stab_buik"
+                android:layout_below="@id/youtube_player_fragment"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+       <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_txt"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="32dp"
+            android:alpha="0.8"
+            android:layout_alignParentEnd="true" />
+
+
+        <TextView
+            android:id="@+id/vid_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginTop="55dp"
+            android:text="@string/info_buik"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/next_btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:paddingLeft="200dp"
+            android:paddingBottom="50dp"
+            android:paddingTop="50dp"
+            android:layout_marginTop="40dp"
+            android:src="@mipmap/ic_arrow_forward_white"
+            android:background="@android:color/transparent"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/pb1" />
+
+</RelativeLayout>

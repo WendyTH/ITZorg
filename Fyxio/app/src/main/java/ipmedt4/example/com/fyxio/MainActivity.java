@@ -41,9 +41,10 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new android.view.View.OnClickListener() {
             public void onClick(View arg0) {
 
-                // Start SecondActivity.class
+                // Start FourthActivity.class
+                // start vierde activity omdat deze later is toegevoegd maar als eerste moet beginnen.
                 Intent myIntent = new Intent(MainActivity.this,
-                        FirstActivity.class);
+                        FourthActivity.class);
                 startActivity(myIntent);
             }
         });

@@ -133,7 +133,6 @@ public class Settings extends AppCompatActivity {
                 Log.e("random number is ", String.valueOf(random_number));
 
                 myIntent.putExtra("extra", "no");
-                sendBroadcast(myIntent);
 
                 alarmManager.cancel(pending_intent);
                 setAlarmText("Reminder is geannuleerd");

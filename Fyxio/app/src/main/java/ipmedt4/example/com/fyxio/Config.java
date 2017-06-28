@@ -10,5 +10,6 @@ public class Config {
     //public static final String YOUTUBE_VIDEO1_CODE = "_oEA18Y8gM0";
     public static final String YOUTUBE_VIDEO2_CODE = "KKrdfW8JOHg";
     public static final String YOUTUBE_VIDEO3_CODE = "jJhbAq2epNA";
-
+    public static final String YOUTUBE_VIDEO4_CODE = "tqKkPyU-sI0";
+    public static final String YOUTUBE_VIDEO5_CODE = "uwWS0vlvXy8";
 }

@@ -5,12 +5,17 @@
 
     <string name="btn_start_exc">Start oefeningen</string>
 
+    <string name="info_buik">Rugoefening</string>
+
+    <string name="info_rug">Enkeloefening</string>
+
     <string name="action_settings">Reminder instellen</string>
 
     <string name="ondertitel">Werk aan uw herstel met de Fyxio app!
     Binnen deze app kunt u meerdere oefeningen vinden in de vorm van video\'s.
         In de video\'s wordt uitgelegd hoe u de oefeningen behoort uit te voeren en kunt u
         tegelijkertijd meedoen.
+        \n \n Bij elke vorm van twijfel over pijn of ongemakkelijkheid aarzel dan niet om uw arts te raadplegen.
     \n \n Wij wensen u veel succes met uw revalidatie!</string>
 
 
@@ -20,6 +25,8 @@
     <string name="info_video1">Been oefening</string>
     <string name="info_video2">Enkel oefening</string>
     <string name="info_video3">Klaar!</string>
+    <string name="info_video4">Been2</string>
+    <string name="info_video5">Klaar!</string>
 
     <string name="info_ex1">Binnen deze oefening gaan we de enkel op en neer bewegen.
     U kunt hiervoor het beste zitten op bed of op een bank, waardoor uw benen plat liggen. \n \n
@@ -45,6 +52,22 @@
     2. Beweeg uw tenen en uw enkel van u af, waardoor uw tenen op de grond blijven en
         uw enkel van de grond af komt. \n
     3. Herhaal deze beweging 10 keer. \n \n
+    U bent nu klaar met de oefeningen voor vandaag, goed gedaan! \n \n</string>
+
+    <string name="Stab_buik">We beginnen uw herstel met stabiliteitsoefeningen.
+        het is namelijk belangrijk dat ook uw rug en buik aansterken om opnieuw te balanceren op twee benen.\n \n
+    Voer de volgende stappen uit: \n
+    1. INSTRUCTIE\n
+    2. INSTRUCTIE \n
+    3. INSTRUCTIE \n \n
+    U bent nu klaar met de oefeningen voor vandaag, goed gedaan! \n \n</string>
+
+    <string name="Stab_rug">Vervolgens gaan we verder met het versterken van uw rug.
+        het is namelijk belangrijk dat ook uw rug en buik aansterken om opnieuw te balanceren op twee benen.\n \n
+    Voer de volgende stappen uit: \n
+    1. INSTRUCTIE \n
+    2. INSTRUCTIE \n
+    3. INSTRUCTIE \n \n
     U bent nu klaar met de oefeningen voor vandaag, goed gedaan! \n \n</string>
 
 </resources>
