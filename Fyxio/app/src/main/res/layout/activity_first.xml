@@ -94,6 +94,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/pb3" />
+        app:srcCompat="@drawable/pb1" />
 
 </RelativeLayout>

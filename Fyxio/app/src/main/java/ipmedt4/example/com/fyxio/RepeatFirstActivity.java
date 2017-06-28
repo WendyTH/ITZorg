@@ -18,18 +18,17 @@ import com.google.android.youtube.player.YouTubePlayerFragment;
  * Created by thier on 7-6-2017.
  */
 
-public class SecondActivity extends AppCompatActivity implements YouTubePlayer.OnInitializedListener{
+public class RepeatFirstActivity extends AppCompatActivity implements YouTubePlayer.OnInitializedListener{
 
     private YouTubePlayerFragment playerFragment;
     private YouTubePlayer mPlayer;
 
-    Button button;
     ImageButton imageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second);
+        setContentView(R.layout.activity_repeat_first);
 
 
         playerFragment =
@@ -41,16 +40,16 @@ public class SecondActivity extends AppCompatActivity implements YouTubePlayer.O
         addListenerOnButton();
     }
 
-    //imagebutton onclick listener
+    //Listener voor imagebutton
     public void addListenerOnButton(){
-        imageButton = (ImageButton) findViewById(R.id.next_btn2);
+        imageButton = (ImageButton) findViewById(R.id.next_btn);
 
         imageButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {
-                Intent myIntent = new Intent(SecondActivity.this,
-                        ThirdActivity.class);
+                Intent myIntent = new Intent(RepeatFirstActivity.this,
+                        OverviewActivity.class);
                 startActivity(myIntent);
             }
 
@@ -73,7 +72,7 @@ public class SecondActivity extends AppCompatActivity implements YouTubePlayer.O
 
         if (!wasRestored) {
 
-            mPlayer.cueVideo(Config.YOUTUBE_VIDEO5_CODE);
+            mPlayer.cueVideo(Config.YOUTUBE_VIDEO4_CODE);
         }
         else
         {
@@ -88,7 +87,7 @@ public class SecondActivity extends AppCompatActivity implements YouTubePlayer.O
     }
 
 
-   @Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -104,7 +103,7 @@ public class SecondActivity extends AppCompatActivity implements YouTubePlayer.O
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Intent i = new Intent(SecondActivity.this, Settings.class);
+            Intent i = new Intent(RepeatFirstActivity.this, Settings.class);
             startActivity(i);
         }
 

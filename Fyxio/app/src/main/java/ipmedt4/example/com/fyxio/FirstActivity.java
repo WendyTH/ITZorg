@@ -71,8 +71,8 @@ public class FirstActivity extends AppCompatActivity implements YouTubePlayer.On
         mPlayer.addFullscreenControlFlag(YouTubePlayer.FULLSCREEN_FLAG_CONTROL_SYSTEM_UI);
 
         if (!wasRestored) {
-            //player.cueVideo("9rLZYyMbJic");
-            mPlayer.cueVideo(Config.YOUTUBE_VIDEO1_CODE);
+
+            mPlayer.cueVideo(Config.YOUTUBE_VIDEO4_CODE);
         }
         else
         {

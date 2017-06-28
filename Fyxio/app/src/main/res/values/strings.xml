@@ -5,6 +5,10 @@
 
     <string name="btn_start_exc">Start oefeningen</string>
 
+    <string name="btn_back_hoofdmenu">Hoofdmenu</string>
+
+    <string name="btn_back_overzicht">Overzicht oefeningen</string>
+
     <string name="info_buik">Rugoefening</string>
 
     <string name="info_rug">Enkeloefening</string>
@@ -18,15 +22,23 @@
         \n \n Bij elke vorm van twijfel over pijn of ongemakkelijkheid aarzel dan niet om uw arts te raadplegen.
     \n \n Wij wensen u veel succes met uw revalidatie!</string>
 
+    <string name="btn_repeat_exc">Herhaal buikoefening</string>
+    <string name="btn_repeat_exc1">Herhaal rugoefening</string>
+    <string name="btn_repeat_exc2">Herhaal enkeloefening1</string>
+    <string name="btn_repeat_exc3">Herhaal beenoefening</string>
+    <string name="btn_repeat_exc4">Herhaal enkeloefening2</string>
+
+
 
     <string name="error_player">%Oeps! er is iets fout gegaan. Controleer uw internetverbinding%</string>
 
     <string name="next_txt">Next</string>
-    <string name="info_video1">Been oefening</string>
+    <string name="back_txt">Back</string>
+    <string name="info_video1">Rug oefening</string>
     <string name="info_video2">Enkel oefening</string>
-    <string name="info_video3">Klaar!</string>
-    <string name="info_video4">Been2</string>
-    <string name="info_video5">Klaar!</string>
+    <string name="info_video3">Been oefening!</string>
+    <string name="info_video4">Enkel oefening</string>
+    <string name="info_video5">Overzicht</string>
 
     <string name="info_ex1">Binnen deze oefening gaan we de enkel op en neer bewegen.
     U kunt hiervoor het beste zitten op bed of op een bank, waardoor uw benen plat liggen. \n \n
@@ -69,5 +81,9 @@
     2. INSTRUCTIE \n
     3. INSTRUCTIE \n \n
     U bent nu klaar met de oefeningen voor vandaag, goed gedaan! \n \n</string>
+
+    <string name="info_overview">Het is belangrijk om de oefeningen dagelijks te herhalen.\n
+        Kies uit één van onderstaande oefeningen om deze nogmaals te herhalen.\n
+    </string>
 
 </resources>
