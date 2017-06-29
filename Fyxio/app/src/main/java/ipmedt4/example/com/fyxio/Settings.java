@@ -119,7 +119,7 @@ public class Settings extends AppCompatActivity {
 
         });
 
-        Button stop_alarm= (Button) findViewById(R.id.stop_alarm);
+        final Button stop_alarm= (Button) findViewById(R.id.stop_alarm);
         stop_alarm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -134,8 +134,12 @@ public class Settings extends AppCompatActivity {
 
                 myIntent.putExtra("extra", "no");
 
-                alarmManager.cancel(pending_intent);
-                setAlarmText("Reminder is geannuleerd");
+                //alarmManager.cancel(pending_intent);
+                if (pending_intent==null){
+                    setAlarmText("U heeft nog geen reminder ingesteld");
+                }
+                else{
+                setAlarmText("Reminder is geannuleerd");}
                 //setAlarmText("You clicked a " + " canceled");
             }
         });
