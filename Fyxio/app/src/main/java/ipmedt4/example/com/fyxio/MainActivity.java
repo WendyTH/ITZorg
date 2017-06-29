@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                 Intent myIntent = new Intent(MainActivity.this,
-                        FirstActivity.class);
+                        FourthActivity.class);
                 startActivity(myIntent);
             }
         });

@@ -50,7 +50,7 @@ public class ThirdActivity extends AppCompatActivity implements YouTubePlayer.On
             @Override
             public void onClick(View arg0) {
                 Intent myIntent = new Intent(ThirdActivity.this,
-                        FourthActivity.class);
+                        OverviewActivity.class);
                 startActivity(myIntent);
             }
 

@@ -49,7 +49,7 @@ public class FifthActivity extends AppCompatActivity implements YouTubePlayer.On
             @Override
             public void onClick(View arg0) {
                 Intent myIntent = new Intent(FifthActivity.this,
-                        OverviewActivity.class);
+                        FirstActivity.class);
                 startActivity(myIntent);
             }
 
