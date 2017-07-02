@@ -73,7 +73,7 @@ public class FourthActivity  extends AppCompatActivity implements YouTubePlayer.
 
         if (!wasRestored) {
 
-            mPlayer.cueVideo(Config.YOUTUBE_VIDEO2_CODE);
+            mPlayer.cueVideo(Config.YOUTUBE_VIDEO4_CODE);
         }
         else
         {

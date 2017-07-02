@@ -17,6 +17,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/pb5"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="32dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/vordering" />
+
             <fragment
                 android:id="@+id/youtube_player_fragment"
                 android:name="com.google.android.youtube.player.YouTubePlayerFragment"
@@ -24,17 +42,15 @@
                 android:layout_marginRight="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="56dp" />
-
+                android:layout_marginTop="84dp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/Stab_rug"
+                android:text="@string/info_ex5"
+                android:layout_below="@id/youtube_player_fragment"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginTop="17dp"
-                android:layout_below="@+id/youtube_player_fragment"
-                android:layout_alignStart="@+id/youtube_player_fragment" />
+                android:layout_marginTop="16dp" />
 
         </RelativeLayout>
 
@@ -70,7 +86,7 @@
             android:layout_marginLeft="40dp"
             android:layout_marginRight="48dp"
             android:layout_marginTop="55dp"
-            android:text="@string/info_rug"
+            android:text="@string/info_video5"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -89,22 +105,4 @@
             android:src="@mipmap/ic_arrow_forward_white"
             android:background="@android:color/transparent"/>
     </RelativeLayout>
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/pb2"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="22dp" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/vordering"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp" />
-
 </RelativeLayout>

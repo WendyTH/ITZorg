@@ -72,7 +72,7 @@ public class FirstActivity extends AppCompatActivity implements YouTubePlayer.On
 
         if (!wasRestored) {
 
-            mPlayer.cueVideo(Config.YOUTUBE_VIDEO4_CODE);
+            mPlayer.cueVideo(Config.YOUTUBE_VIDEO1_CODE);
         }
         else
         {

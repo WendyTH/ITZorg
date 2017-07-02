@@ -73,7 +73,7 @@ public class SecondActivity extends AppCompatActivity implements YouTubePlayer.O
 
         if (!wasRestored) {
 
-            mPlayer.cueVideo(Config.YOUTUBE_VIDEO5_CODE);
+            mPlayer.cueVideo(Config.YOUTUBE_VIDEO2_CODE);
         }
         else
         {

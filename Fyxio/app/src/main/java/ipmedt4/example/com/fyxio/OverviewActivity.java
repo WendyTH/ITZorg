@@ -18,9 +18,6 @@ import com.google.android.youtube.player.YouTubePlayerFragment;
  */
 
 public class OverviewActivity extends AppCompatActivity {
-
-
-
     Button button;
     ImageButton imageButton;
 
@@ -29,8 +26,7 @@ public class OverviewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_overview);
 
-
-            //button listener aanroepen
+        //button listener aanroepen
         addListenerOnButton();
         addListenerOnButton1();
         addListenerOnButton2();

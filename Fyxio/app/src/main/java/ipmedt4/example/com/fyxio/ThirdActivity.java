@@ -50,7 +50,7 @@ public class ThirdActivity extends AppCompatActivity implements YouTubePlayer.On
             @Override
             public void onClick(View arg0) {
                 Intent myIntent = new Intent(ThirdActivity.this,
-                        OverviewActivity.class);
+                        FourthActivity.class);
                 startActivity(myIntent);
             }
 
@@ -74,7 +74,7 @@ public class ThirdActivity extends AppCompatActivity implements YouTubePlayer.On
 
         if (!wasRestored) {
 
-            mPlayer.cueVideo(Config.YOUTUBE_VIDEO1_CODE);
+            mPlayer.cueVideo(Config.YOUTUBE_VIDEO3_CODE);
         }
         else
         {

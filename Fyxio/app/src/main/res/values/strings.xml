@@ -9,10 +9,6 @@
 
     <string name="btn_back_overzicht">Overzicht oefeningen</string>
 
-    <string name="info_buik">Rugoefening</string>
-
-    <string name="info_rug">Enkeloefening</string>
-
     <string name="action_settings">Reminder instellen</string>
 
     <string name="ondertitel">Werk aan uw herstel met de Fyxio app!
@@ -24,11 +20,9 @@
 
     <string name="btn_repeat_exc">Herhaal buikoefening</string>
     <string name="btn_repeat_exc1">Herhaal rugoefening</string>
-    <string name="btn_repeat_exc2">Herhaal enkeloefening1</string>
+    <string name="btn_repeat_exc2">Herhaal enkeloefening (1)</string>
     <string name="btn_repeat_exc3">Herhaal beenoefening</string>
-    <string name="btn_repeat_exc4">Herhaal enkeloefening2</string>
-
-
+    <string name="btn_repeat_exc4">Herhaal enkeloefening (2)</string>
 
     <string name="error_player">%Oeps! er is iets fout gegaan. Controleer uw internetverbinding%</string>
 
@@ -36,11 +30,27 @@
     <string name="back_txt">Back</string>
     <string name="info_video1">Rug oefening</string>
     <string name="info_video2">Enkel oefening</string>
-    <string name="info_video3">Been oefening!</string>
+    <string name="info_video3">Been oefening</string>
     <string name="info_video4">Enkel oefening</string>
     <string name="info_video5">Overzicht</string>
 
-    <string name="info_ex1">Binnen deze oefening gaan we de enkel op en neer bewegen.
+    <string name="info_ex1">Binnen deze oefening gaan we uw buikspieren aansterken.
+        Het is namelijk belangrijk dat ook uw rug en buik aan te sterken om opnieuw te kunnen balanceren op twee benen.\n \n
+    Voer de volgende stappen uit: \n
+    1. INSTRUCTIE \n
+    2. INSTRUCTIE \n
+    3. INSTRUCTIE \n \n
+    U bent nu klaar met deze oefening en u kunt doorgaan naar de volgende pagina! \n \n</string>
+
+    <string name="info_ex2">Vervolgens gaan we verder met het versterken van uw rug.
+        het is namelijk belangrijk dat ook uw rug en buik aansterken om opnieuw te balanceren op twee benen.\n \n
+    Voer de volgende stappen uit: \n
+    1. INSTRUCTIE \n
+    2. INSTRUCTIE \n
+    3. INSTRUCTIE \n \n
+    U bent nu klaar met de oefeningen voor vandaag, goed gedaan! \n \n</string>
+
+    <string name="info_ex3">Binnen deze oefening gaan we de enkel op en neer bewegen.
     U kunt hiervoor het beste zitten op bed of op een bank, waardoor uw benen plat liggen. \n \n
     Voer de volgende stappen uit: \n
     1. Beweeg uw tenen en uw enkel naar u toe. \n
@@ -48,7 +58,7 @@
     3. Herhaal deze beweging 10 keer. \n \n
     U bent nu klaar met deze oefening en u kunt doorgaan naar de volgende pagina! \n \n</string>
 
-    <string name="info_ex2">Binnen deze oefening gaan we het been strekken naar achteren.
+    <string name="info_ex4">Binnen deze oefening gaan we het been strekken naar achteren.
     U kunt hiervoor het beste steunen op een stevige stoel, tafel of hoge bedrand voor extra balans. \n \n
     Voer de volgende stappen uit: \n
     1. Ga goed op twee benen staan en houd u vast aan de stoel. \n
@@ -57,7 +67,7 @@
     3. Herhaal deze beweging met elk been 10 keer. \n \n
     U bent nu klaar met deze oefening en u kunt doorgaan naar de volgende pagina! \n \n</string>
 
-    <string name="info_ex3">Binnen deze oefening gaan we de enkel opnieuw op en neer bewegen.
+    <string name="info_ex5">Binnen deze oefening gaan we de enkel opnieuw op en neer bewegen.
     U kunt hiervoor het beste op een stoel gaan zitten met uw voeten rustend op de grond. \n \n
     Voer de volgende stappen uit: \n
     1. Beweeg uw tenen en uw enkel naar u toe, waardoor uw tenen de lucht in wijzen. \n
@@ -66,24 +76,8 @@
     3. Herhaal deze beweging 10 keer. \n \n
     U bent nu klaar met de oefeningen voor vandaag, goed gedaan! \n \n</string>
 
-    <string name="Stab_buik">We beginnen uw herstel met stabiliteitsoefeningen.
-        het is namelijk belangrijk dat ook uw rug en buik aansterken om opnieuw te balanceren op twee benen.\n \n
-    Voer de volgende stappen uit: \n
-    1. INSTRUCTIE\n
-    2. INSTRUCTIE \n
-    3. INSTRUCTIE \n \n
-    U bent nu klaar met de oefeningen voor vandaag, goed gedaan! \n \n</string>
-
-    <string name="Stab_rug">Vervolgens gaan we verder met het versterken van uw rug.
-        het is namelijk belangrijk dat ook uw rug en buik aansterken om opnieuw te balanceren op twee benen.\n \n
-    Voer de volgende stappen uit: \n
-    1. INSTRUCTIE \n
-    2. INSTRUCTIE \n
-    3. INSTRUCTIE \n \n
-    U bent nu klaar met de oefeningen voor vandaag, goed gedaan! \n \n</string>
-
-    <string name="info_overview">Het is belangrijk om de oefeningen dagelijks te herhalen.\n
-        Kies uit één van onderstaande oefeningen om deze nogmaals te herhalen.\n
+    <string name="info_overview">Het is belangrijk om de oefeningen dagelijks te herhalen.
+        Kies uit één van onderstaande oefeningen om deze nogmaals te herhalen:\n
     </string>
 
     <string name="vordering">Vordering van uw oefeningen:</string>

@@ -15,85 +15,67 @@
         android:fillViewport="true">
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/info_overview"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="17dp"
-                android:layout_below="@+id/youtube_player_fragment"
-                android:layout_alignStart="@+id/youtube_player_fragment"
+                android:layout_marginTop="16dp"
                 android:id="@+id/textView3" />
 
             <Button
                 android:id="@+id/btn_start_repeat_ex"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
                 android:textColor="@android:color/white"
                 android:background="@drawable/rouned_corner_shadow"
                 android:text="@string/btn_repeat_exc"
                 android:layout_below="@+id/textView3"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="56dp" />
+                android:layout_marginTop="16dp" />
 
             <Button
                 android:id="@+id/btn_start_repeat_ex1"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
                 android:textColor="@android:color/white"
                 android:background="@drawable/rouned_corner_shadow"
                 android:text="@string/btn_repeat_exc1"
-                android:layout_centerVertical="true"
-                android:layout_alignStart="@+id/btn_start_repeat_ex" />
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/btn_start_repeat_ex"/>
 
             <Button
                 android:id="@+id/btn_start_repeat_ex2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
                 android:textColor="@android:color/white"
                 android:background="@drawable/rouned_corner_shadow"
                 android:text="@string/btn_repeat_exc2"
                 android:layout_below="@+id/btn_start_repeat_ex1"
-                android:layout_alignStart="@+id/btn_start_repeat_ex1"
-                android:layout_marginTop="14dp" />
+                android:layout_marginTop="16dp" />
 
             <Button
                 android:id="@+id/btn_start_repeat_ex3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
                 android:textColor="@android:color/white"
                 android:background="@drawable/rouned_corner_shadow"
                 android:text="@string/btn_repeat_exc3"
                 android:layout_below="@+id/btn_start_repeat_ex2"
-                android:layout_alignStart="@+id/btn_start_repeat_ex2"
-                android:layout_marginTop="14dp" />
+                android:layout_marginTop="16dp" />
 
             <Button
                 android:id="@+id/btn_start_repeat_ex4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="36dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
                 android:textColor="@android:color/white"
                 android:background="@drawable/rouned_corner_shadow"
                 android:text="@string/btn_repeat_exc4"
                 android:layout_below="@+id/btn_start_repeat_ex3"
-                android:layout_alignStart="@+id/btn_start_repeat_ex3"
-                android:layout_marginTop="14dp" />
-
-
-
+                android:layout_marginTop="16dp" />
         </RelativeLayout>
 
     </ScrollView>

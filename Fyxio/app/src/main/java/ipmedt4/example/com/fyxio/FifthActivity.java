@@ -49,7 +49,7 @@ public class FifthActivity extends AppCompatActivity implements YouTubePlayer.On
             @Override
             public void onClick(View arg0) {
                 Intent myIntent = new Intent(FifthActivity.this,
-                        FirstActivity.class);
+                        OverviewActivity.class);
                 startActivity(myIntent);
             }
 
@@ -73,7 +73,7 @@ public class FifthActivity extends AppCompatActivity implements YouTubePlayer.On
 
         if (!wasRestored) {
 
-            mPlayer.cueVideo(Config.YOUTUBE_VIDEO3_CODE);
+            mPlayer.cueVideo(Config.YOUTUBE_VIDEO5_CODE);
         }
         else
         {
