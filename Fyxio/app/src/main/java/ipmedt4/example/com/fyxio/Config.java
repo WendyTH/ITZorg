@@ -7,7 +7,7 @@ public class Config {
 
     // YouTube video id
     //buik
-    public static final String YOUTUBE_VIDEO1_CODE = "tqKkPyU-sI0";
+    public static final String YOUTUBE_VIDEO1_CODE = "Gms1l-WMNeU";
     //rug
     public static final String YOUTUBE_VIDEO2_CODE = "uwWS0vlvXy8";
 
