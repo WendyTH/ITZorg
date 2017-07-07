@@ -1,6 +1,8 @@
 package ipmedt4.example.com.fyxio;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -38,6 +40,11 @@ public class FourthActivity  extends AppCompatActivity implements YouTubePlayer.
 
         //button listener aanroepen
         addListenerOnButton();
+
+        SharedPreferences exNumber = getSharedPreferences("NUMBER", Context.MODE_PRIVATE);
+        SharedPreferences.Editor ed = exNumber.edit();
+        ed.putInt("exNumber", 4);
+        ed.apply();
     }
 
     //imagebutton onclick listener
