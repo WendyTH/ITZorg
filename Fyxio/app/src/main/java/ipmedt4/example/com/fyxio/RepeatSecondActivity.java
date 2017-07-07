@@ -70,7 +70,7 @@ public class RepeatSecondActivity extends AppCompatActivity implements YouTubePl
 
         if (!wasRestored) {
 
-            mPlayer.cueVideo(Config.YOUTUBE_VIDEO4_CODE);
+            mPlayer.cueVideo(Config.YOUTUBE_VIDEO2_CODE);
         }
         else
         {

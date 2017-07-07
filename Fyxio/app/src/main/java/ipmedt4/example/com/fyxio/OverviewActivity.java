@@ -74,7 +74,7 @@ public class OverviewActivity extends AppCompatActivity {
     }
     public void addListenerOnButton2(){
 
-        // Locate the button in activity_repeat_second.xml
+        // Locate the button in activity_repeat_first.xml
         button = (Button) findViewById(R.id.btn_start_repeat_ex1);
 
         // Capture button clicks
@@ -92,7 +92,7 @@ public class OverviewActivity extends AppCompatActivity {
 
     public void addListenerOnButton3(){
 
-        // Locate the button in activity_repeat_third.xml
+        // Locate the button in activity_repeat_first.xml
         button = (Button) findViewById(R.id.btn_start_repeat_ex2);
 
         // Capture button clicks
@@ -110,7 +110,7 @@ public class OverviewActivity extends AppCompatActivity {
 
     public void addListenerOnButton4(){
 
-        // Locate the button in activity_repeat_fourth.xml
+        // Locate the button in activity_repeat_first.xml
         button = (Button) findViewById(R.id.btn_start_repeat_ex3);
 
         // Capture button clicks
@@ -128,7 +128,7 @@ public class OverviewActivity extends AppCompatActivity {
 
     public void addListenerOnButton5(){
 
-        // Locate the button in activity_repeat_fourth.xml
+        // Locate the button in activity_repeat_first.xml
         button = (Button) findViewById(R.id.btn_start_repeat_ex4);
 
         // Capture button clicks
