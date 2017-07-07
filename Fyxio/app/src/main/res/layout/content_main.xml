@@ -36,15 +36,18 @@
                 android:layout_below="@id/container">
 
                 <ListView
+                    android:id="@+id/listView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true">
                 </ListView>
 
+
                 <Button
                     android:id="@+id/btn_start_ex"
                     android:layout_width="wrap_content"
                     android:layout_height="36dp"
+                    android:layout_below="@+id/listView"
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
                     android:layout_marginTop="16dp"
@@ -55,6 +58,21 @@
                     android:layout_marginRight="8dp"
                     android:layout_centerVertical="true"
                     android:layout_alignParentEnd="true" />
+
+                <Button
+                    android:id="@+id/btn_last_ex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="@string/last_exc"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/rouned_corner_shadow"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/btn_start_ex" />
             </RelativeLayout>
     </RelativeLayout>
 </android.support.v4.widget.NestedScrollView>
