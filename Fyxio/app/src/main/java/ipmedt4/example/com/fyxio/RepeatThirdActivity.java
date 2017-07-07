@@ -70,7 +70,7 @@ public class RepeatThirdActivity extends AppCompatActivity implements YouTubePla
 
         if (!wasRestored) {
 
-            mPlayer.cueVideo(Config.YOUTUBE_VIDEO4_CODE);
+            mPlayer.cueVideo(Config.YOUTUBE_VIDEO3_CODE);
         }
         else
         {
